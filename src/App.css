@@ -20,3 +20,23 @@
 .App-intro {
   font-size: large;
 }
+
+#characterSelect {
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#characterSelectLabel {
+  margin-top: 20%; 
+  padding: 20px;
+  background-color: #008080;
+  color: #fff;
+  cursor: pointer;
+}
+
+#characterSelectLabel:hover {
+  background-color: #449494;
+}
