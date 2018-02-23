@@ -11,8 +11,11 @@ class CharacterSelect extends Component {
 
     validateFile() {
         var reader = new FileReader();
-        alert("Hello!");
-        this.setState({active: false});
+        var file = document.querySelector("#characterSelect").files[0];
+        reader.onload = function(event) {
+            console.log(event.target.result);
+        }
+        reader.readAsText(file);
     }
 
     render() {
