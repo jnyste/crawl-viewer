@@ -1,6 +1,6 @@
 import {Col, Grid, Jumbotron, Button, Navbar, Nav, NavItem} from 'react-bootstrap';
 import React, { Component } from 'react';
-import CharacterSelect from './components/Compo.js';
+import Character from './components/Character.js';
 import './App.css';
 
 class App extends Component {
@@ -11,7 +11,7 @@ class App extends Component {
           <img src="logo.png" className="App-logo"></img>
           <h4>Character Viewer</h4>
         </header>
-        <CharacterSelect/>
+        <Character/>
       </div>
     );
   }
